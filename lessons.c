@@ -314,8 +314,254 @@
 //     return 0;
 // }
 
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-int main() {
+// int main()
+// {
+//     int a, b, c, d, e;
+//     double result;
+//     scanf("%d", &e);
+//     a = e / 1000;
+//     b = e / 100 % 10;
+//     c = e / 10 % 10;
+//     d = e  % 10;
+//     result = (double)(a * c) / (b * d);
+//     printf("%0.2lf", result);
+//     // printf("%d %d %d %d", a,b,c,d);
+//     return 0;
+// }
+
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     long long int a, k;
+//     scanf("%d", &k);
+//     a = k * (long)(pow(2,30) - pow(10,9));
+//     printf("%lld", a);
+//     return 0;
+// }
+
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     int size;
+//     long long int otvet;
+//     long long int gigabyte, gigabyte1;
+//     long long int a1, a2;
+//     scanf("%d", &size);
+//     gigabyte = 1073741824;
+//     gigabyte1 = 1000000000;
+//     a1 = size * gigabyte;
+//     a2 = size * gigabyte1;
+//     otvet = a1 - a2;
+//     printf("%lld", otvet);
+//     return 0;
+// }
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int k;
+//     scanf("%d", &k);
+//     if(k == 0){
+//         printf("1");
+//     }
+//     else{
+//         printf("0");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, i;
+//     int factorial;
+//     for (n = 1; n <= 10; n++) {
+//         factorial = 1; // Инициализируем значение факториала для каждого числа n
+//         for (i = 1; i <= n; i++) {
+//             factorial *= i; // Умножаем факториал на текущее значение i
+//         }
+//         printf("%d%s! =%8d\n", n, n == 10 ? "" : "", factorial); // Выводим результат
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, i;
+//     unsigned long long factorial;
+
+//     // Вычисляем факториал для чисел от 1 до 10
+//     for (n = 1; n <= 10; n++) {
+//         factorial = 1; // Инициализируем значение факториала для каждого числа n
+//         for (i = 1; i <= n; i++) {
+//             factorial *= i; // Умножаем факториал на текущее значение i
+//         }
+//         printf("%d!%s=%8llu\n", n, n == 10 ? "" : " ", factorial); // Форматированный вывод
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     double a,b,c;
+//      a = 1. + 1/(1*1) + 1./(1*2) + 1./(1*2*3);
+//      b = 1. + 1. + 1./2 + 1./6 + 1./24;
+//      c = 1. + 1. + 1./2 + 1./6 + 1./24 + 1./120;
+//     printf("%.5f\n", a);
+//     printf("%.5f\n", b);
+//     printf("%.5f\n", c);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+
+// int main() {
+//   int x; // Радиус планеты (в км)
+//   double disk_radius; // Радиус плоского диска (в км)
+//   double flight_time; // Время полета (в часах)
+// //   double M_PI = 3.141592;
+//   scanf("%d", &x);
+
+//   // Вычисляем радиус плоского диска
+//   disk_radius = x*2;
+
+//   // Вычисляем время полета
+//   flight_time = x*4/900;
+
+//   // Выводим результаты
+//   printf("%.0lf %.0lf\n", disk_radius, flight_time);
+
+//   return 0;
+// }
+
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main() {
+//   int x1, x2, x3, x4, x5;
+//   int result = 0;
+//   scanf("%d %d %d %d %d", &x1, &x2, &x3, &x4, &x5);
+//   if(x1 == 0 && x2 == 0 && x3 == 0 && x4 == 0 && x5 ==0){
+//     result = 0;
+//   }
+//   else{
+//     if (x1 !=1) result += x1 * x1;
+//     if (x1 !=2) result += x2 * x2;
+//     if (x1 !=3) result += x3 * x3;
+//     if (x1 !=4) result += x4 * x4;
+//     if (x1 !=5) result += x5 * x5;
+//   }
+//     printf("%d", result);
+//     return 0;
+//   }
+// #include <math.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main() {
+//   int k = 0;
+//   int otvet = 0;
+//   scanf("%d", &k);
+//   otvet = k * 10;
+//   printf("%d", otvet);
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main(){
+//   int k;
+//   int hundreds, tens, ones, result;
+//   scanf("%d", &k);
+//   hundreds = k / 100;
+//   tens = (k/10) % 10;
+//   ones = k % 10;
+//   result = tens * 100 + ones * 10 + hundreds;
+//   printf("%d", result);
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//   int k;
+//   int hours, hours2;
+//   scanf("%d", &k);
+//   hours = k / 7 + 1;
+//   hours2 =
+//       printf("%d", hours);
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//   int n;
+//   scanf("%d", &n);
+//   printf("%.0f", pow(2,(n/3)));
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//   int f,d;
+//   double result;
+//   scanf("%d %d", &f, &d);
+//   result = (f * 0.3048) + (d * 0.0254);
+//   printf("%d\'%d\" = %.2f m", f,d,result);
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//   int f;
+//   double result;
+//   scanf("%d", &f);
+//   result = (double)f * 454 / 1000 ;
+//   printf("%.2lf",result);
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//   int f;
+//   double result;
+//   scanf("%d", &f);
+//   result = (double)(f - 32) * 5/9;
+//   printf("%.2lf",result);
+//   return 0;
+// }
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int f, decimal = 0, base = 1, remainder;
+  scanf("%d", &f);
+  while (f > 0){
+    remainder = f % 10;
+    decimal = decimal + remainder * base;
+    f = f / 10;
+    base = base * 2;
+  }
+  printf("%d", decimal);
+  return 0;
+}
