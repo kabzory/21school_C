@@ -550,18 +550,91 @@
 //   printf("%.2lf",result);
 //   return 0;
 // }
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//   int f, decimal = 0, base = 1, remainder;
+//   scanf("%d", &f);
+//   while (f > 0){
+//     remainder = f % 10;
+//     decimal = decimal + remainder * base;
+//     f = f / 10;
+//     base = base * 2;
+//   }
+//   printf("%d", decimal);
+//   return 0;
+// }
+// #include <stdio.h>
+
+// int main() {
+//     int k, x;
+//     int decimal = 0;
+//     int multiplier = 1;
+
+//     scanf("%d %d", &k, &x);
+
+//     // Последовательно переводим цифры из k-ичной системы в десятичную
+//     while (x > 0) {
+//         int digit = x % 10;  // Извлекаем последнюю цифру
+//         decimal += digit * multiplier;
+//         multiplier *= k;
+//         x /= 10;  // Удаляем последнюю цифру
+//     }
+
+//     // Выводим результат
+//     printf("%d\n", decimal);
+
+//     return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//   int a,b;
+//   scanf("%d %d", &a, &b);
+//   if(a / b ==0){
+//     printf("0");
+//   }
+//   else{
+//     printf("%d", a % b);
+//   }
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//   int a,b,c;
+//   scanf("%d %d %d", &a, &b, &c);
+//   printf("%d %d", b%a, c%a);
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//   int a,b,c,d,e;
+//   scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+//   printf("%d %d %d %d", (b+a)%26, (c+a)%26, (d+a)%26, (e+a)%26);
+//   return 0;
+// }
+//     a = e / 1000;
+//     b = e / 100 % 10;
+//     c = e / 10 % 10;
+//     d = e  % 10;
 #include <stdio.h>
 #include <math.h>
-int main()
-{
-  int f, decimal = 0, base = 1, remainder;
-  scanf("%d", &f);
-  while (f > 0){
-    remainder = f % 10;
-    decimal = decimal + remainder * base;
-    f = f / 10;
-    base = base * 2;
-  }
-  printf("%d", decimal);
-  return 0;
+int main(){
+  int a,b,c,d,e;
+  int a1,b1,c1,d1;
+  scanf("%d", &e);
+    a = e / 1000;
+    b = e / 100 % 10;
+    c = e / 10 % 10;
+    d = e  % 10;
+    a1 = (a + 7) %10;
+    b1 = (b +7) % 10;
+    c1 = (c+ 7) % 10;
+    d1 = (d+7) % 10;
+    printf("%d%d%d%d", c1,d1,a1,b1);
+    return 0;
 }
