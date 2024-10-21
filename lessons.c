@@ -621,20 +621,327 @@
 //     b = e / 100 % 10;
 //     c = e / 10 % 10;
 //     d = e  % 10;
-#include <stdio.h>
-#include <math.h>
-int main(){
-  int a,b,c,d,e;
-  int a1,b1,c1,d1;
-  scanf("%d", &e);
-    a = e / 1000;
-    b = e / 100 % 10;
-    c = e / 10 % 10;
-    d = e  % 10;
-    a1 = (a + 7) %10;
-    b1 = (b +7) % 10;
-    c1 = (c+ 7) % 10;
-    d1 = (d+7) % 10;
-    printf("%d%d%d%d", c1,d1,a1,b1);
-    return 0;
-}
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//   int a,b,c,d,e;
+//   int a1,b1,c1,d1;
+//   scanf("%d", &e);
+//     a = e / 1000;
+//     b = e / 100 % 10;
+//     c = e / 10 % 10;
+//     d = e  % 10;
+//     a1 = (a + 7) %10;
+//     b1 = (b +7) % 10;
+//     c1 = (c+ 7) % 10;
+//     d1 = (d+7) % 10;
+//     printf("%d%d%d%d", c1,d1,a1,b1);
+//     return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//   int a,b,c,d,e;
+//   int a1,b1,c1,d1;
+//   scanf("%d", &e);
+//     a = e / 1000;
+//     b = e / 100 % 10;
+//     c = e / 10 % 10;
+//     d = e  % 10;
+//     a1 = (a + 7) %10;
+//     b1 = (b +7) % 10;
+//     c1 = (c+ 7) % 10;
+//     d1 = (d+7) % 10;
+//     printf("%d%d%d%d", c1,d1,a1,b1);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int x1,x2,x3,x4;
+//     scanf("%1d%1d%1d%1d", &x1,&x2,&x3,&x4);
+//     printf("%d%d%d%d", (x3+3)%10,(x4+3)%10,(x1+3)%10,(x2+3)%10);
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+
+// int main() {
+//     // Исходные данные
+//     const double rho0 = 1.29;
+//     const double z = 1.25e-4;
+//     int h;
+
+//     // Ввод высоты
+//     scanf("%d", &h);
+
+//     // Вычисление плотности
+//     double rho = rho0 * exp(-h * z);
+
+//     // Вывод результата с точностью до двух знаков
+//     printf("%.2f\n", rho);
+
+//     return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+
+// int main(){
+//   const double No = 7.5e10;
+//   const double T = 5570;
+//   const double ln2 = log(2);
+//   int k;
+//   scanf("%d", &k);
+//   double lambda = ln2 / T;
+//   double N = No * exp(-lambda *k);
+//   N /= 1e9;
+//   printf("%.2f", N);
+//   return 0;
+// }
+// #include <stdio.h>
+// int main(void){
+
+//   int k = 0, last = 0;
+
+//   scanf("%d",&k);
+
+//   last = k%10;
+
+//   switch (last) {
+//     default:
+//       printf("0\n");
+//       break;
+//     case 1 :
+//     case 9 :
+//       printf("1\n");
+//       break;
+//     case 2 :
+//     case 8 :
+//       printf("4\n");
+//       break;
+//     case 5 :
+//       printf("5\n");
+//       break;
+//     case 4 :
+//     case 6 :
+//       printf("6\n");
+//       break;
+//     case 3 :
+//     case 7 :
+//       printf("9\n");
+//       break;
+//   }
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <locale.h>
+// int main() {
+//   setlocale(LC_ALL, "");
+//   char s;
+//   scanf("%c",&s);
+
+//   switch (s) {
+//     case 'l' : printf("коня потеряешь, себя спасёшь!\n"); break;
+//     case 'f' : printf("и себя и коня потеряешь!\n"); break;
+//     case 'r' : printf("себя потеряешь, коня спасёшь!\n"); break;
+//   }
+
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <locale.h>
+// int main() {
+//   setlocale(LC_ALL, "");
+//   char s;
+//   scanf("%c",&s);
+
+//   switch (s) {
+//     case '1' : printf("плохо\n"); break;
+//     case '2' : printf("неудовлетворительно\n"); break;
+//     case '3' : printf("удовлетворительно\n"); break;
+//     case '4' : printf("хорошо\n"); break;
+//     case '5' : printf("отлично\n"); break;
+//   }
+
+//   return 0;
+// }
+// #include <stdio.h>
+// int main(){
+//   int k;
+//   scanf("%d", &k);
+//   if (k % 2 == 0){
+//     printf("Не любит");
+//   }
+//   else{
+//     printf("Любит");
+//   }
+//   return 0;
+// }
+// #include <stdio.h>
+// #include <math.h>
+
+// int main()
+// {
+//     char a;
+//     int b, c;
+//     float result;
+//     scanf("%c %d %d", &a, &b, &c);
+//     // b_delit_c = b / c;
+//     // b_minus_c = b - c;
+//     // b_plus_c = b + c;
+//     // b_umn_c = b * c;
+//     switch (a)
+//     {
+//     case '+':
+//         result = b + c;
+//         printf("%.2f\n", result);
+//         break;
+//     case '-':
+//         result = b - c;
+//         printf("%.2f\n",result);
+//         break;
+//     case '*':
+//         result = b * c;
+//         printf("%.2f\n",result);
+//         break;
+//     case '/':
+//         result = (float) b / c;
+//         printf("%.2f\n",result);
+//         break;
+//     default:
+//         printf("ERROR!\n");
+//         break;
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+
+// int main()
+// {
+//     char c;
+//     int a, b;
+//     float result;
+//     scanf("%d %d %c", &a, &b, &c);
+//     switch (c)
+//     {
+//     case '+':
+//         result = a + b;
+//         printf("%.2f\n", result);
+//         break;
+//     case '-':
+//         result = a - b;
+//         printf("%.2f\n",result);
+//         break;
+//     case '*':
+//         result = a * b;
+//         printf("%.2f\n",result);
+//         break;
+//     case '/':
+//         if (b == 0){
+//         printf("ERROR!\n"); break;
+//     }
+//         result = (float) a / b;
+//         printf("%.2f\n",result);
+//         break;
+//     default:
+//         printf("ERROR!\n");
+//         break;
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(void)
+// {
+
+//   int age, height, weight;
+//   char bov;
+//   double result;
+//   scanf("%c %d %d %d", &bov, &age, &height, &weight);
+//   switch (bov)
+//   {
+//   case 'm':
+//     result = 10 * weight + 6.25 * height - 5 * age + 5;
+//     printf("|  BMR  |\n");
+//     printf("|%7.2f|\n", result);
+//     break;
+//   case 'f':
+//     result = 10 * weight + 6.25 * height - 5 * age - 161;
+//     printf("|  BMR  |\n");
+//     printf("|%7.2f|\n", result);
+//     break;
+//   default:
+//     printf("ERROR!\n");
+//     break;
+//   }
+//   return 0;
+// }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//   int day, month;
+//   int result;
+//   scanf("%d %d", &month, &day);
+//   switch (month)
+//   {
+//   case 1:
+//     result = 0 + day;
+//     printf("%d", result);
+//     break;
+//   case 2:
+//     result = 31 + day;
+//     printf("%d", result);
+//     break;
+//   case 3:
+//     result = 59 + day;
+//     printf("%d", result);
+//     break;
+//   case 4:
+//     result = 90 + day;
+//     printf("%d", result);
+//     break;
+//   case 5:
+//     result = 120 + day;
+//     printf("%d", result);
+//     break;
+//   case 6:
+//     result = 151 + day;
+//     printf("%d", result);
+//     break;
+//   case 7:
+//     result = 181 + day;
+//     printf("%d", result);
+//     break;
+//   case 8:
+//     result = 212 + day;
+//     printf("%d", result);
+//     break;
+//   case 9:
+//     result = 243 + day;
+//     printf("%d", result);
+//     break;
+//   case 10:
+//     result = 273 + day;
+//     printf("%d", result);
+//     break;
+//   case 11:
+//     result = 304 + day;
+//     printf("%d", result);
+//     break;
+//   case 12:
+//     result = 334 + day;
+//     printf("%d", result);
+//     break;
+//   default:
+//     printf("ERROR!\n");
+//     break;
+//   }
+//   return 0;
+// }
+
