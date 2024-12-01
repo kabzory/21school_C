@@ -945,3 +945,54 @@
 //   return 0;
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int number, number_one, result;
+//     scanf("%d %d", &number, &number_one);
+//     switch (number)
+//     {
+//     case 1:
+//         printf("%d", number_one);
+//         break;
+//     case 2:
+//         result = (number_one / 10) * (number_one % 10);
+//         printf("%d", result);
+//         break;
+//     case 3:
+//         result = (number_one / 100) * ((number_one / 10) % 10) * (number_one % 10);
+//         printf("%d", result);
+//         break;
+//     case 4:
+//         result = (number_one / 1000) * ((number_one / 100) % 10) * ((number_one / 10) % 10) * (number_one % 10);
+//         printf("%d", result);
+//         break;
+//     default:
+//         printf("ERROR!");
+//         break;
+//     }
+//     return 0;
+// }
+//     a = e / 1000;
+//     b = e / 100 % 10;
+//     c = e / 10 % 10;
+//     d = e  % 10;
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int k;
+//     scanf("%d", &k);
+
+//     if (k % 10 == 1 && k != 11) {
+//         printf("Мне %d год\n", k);
+//     } else if (k % 10 >= 2 && k % 10 <= 4 && (k < 10 || k > 14)) {
+//         printf("Мне %d года\n", k);
+//     } else {
+//         printf("Мне %d лет\n", k);
+//     }
+
+//     return 0;
+// }
