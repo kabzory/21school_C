@@ -979,7 +979,6 @@
 //     c = e / 10 % 10;
 //     d = e  % 10;
 
-
 // #include <stdio.h>
 
 // int main() {
@@ -996,3 +995,354 @@
 
 //     return 0;
 // }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a, b;
+//     scanf("%d %d", &a, &b);
+//     if (a == b)
+//     {
+//         printf("1");
+//     }
+
+//     else
+//     {
+//         printf("0");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int x,y;
+//     scanf("%d %d", &x, &y);
+//     if(x > 0 && y > 0){
+//         printf("1");
+//     }
+//     else if(x > 0 && y < 0){
+//         printf("4");
+//     }
+//     else if(x < 0 && y < 0){
+//         printf("3");
+//     }
+//     else if(x < 0 && y > 0){
+//         printf("2");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     double x, y;
+//     scanf("%lf %lf", &x, &y);
+
+//     // Определение квадранта
+//     int quadrant = (x > 0) * (y > 0) * 1 +  // I квадрант
+//                    (x < 0) * (y > 0) * 2 +  // II квадрант
+//                    (x < 0) * (y < 0) * 3 +  // III квадрант
+//                    (x > 0) * (y < 0) * 4;   // IV квадрант
+
+//     printf("%d\n", quadrant);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int temp;
+//     scanf("%d", &temp);
+//     if(temp > 60){
+//         printf("Fire situation");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int a, b, c;
+//     int counter = 0;
+//     scanf("%d %d %d", &a, &b, &c);
+//     if (a > 0)
+//     {
+//         counter = counter + 1;
+//     }
+//     if (b > 0)
+//     {
+//         counter = counter + 1;
+//     }
+//     if (c > 0)
+//     {
+//         counter = counter + 1;
+//     }
+//     printf("%d", counter);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int a,b;
+//     scanf("%d %d", &a, &b);
+//     if(a > b || a == b){
+//         printf("no");
+//     }
+//     else{
+//         printf("yes");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int x,y;
+//     int x1,y1;
+//     int result = 0,result2 = 0;
+//     scanf("%d %d %d %d", &x, &y, &x1, &y1);
+//     result = (x*x) + (y*y);
+//     result2 = (x1*x1) + (y1 * y1);
+//     if(result < result2){
+//         printf("1");
+//     }
+//     else if(result > result2){
+//         printf("2");
+//     }
+//     else{
+//         printf("0");
+//     }
+//     return 0;
+
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int a,b,c,d;
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
+//     if(a == 1 && b == 0 && c == 2 && d == 4){
+//         printf("open");
+//     }
+//     else{
+//         printf("closed");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int a,b,c;
+//     scanf("%d %d %d", &a, &b, &c);
+//     if((a == 2 || a == 4 || a == 8) && (b == 2 || b ==4 || b ==8) && (c == 2 || c ==4 || c ==8)){
+//         printf("open");
+//     }
+//     else{
+//         printf("closed");
+//     }
+//     return 0;
+// }
+// #include <stdio.h>
+// int main(){
+//     int minutes;
+//     int result;
+//     scanf("%d", &minutes);
+//     if(500 > minutes || 500 == minutes){
+//         printf("350");
+//     }
+//     else if(minutes > 500){
+//         printf("%d", (minutes - 500) * 2 + 350);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int day, month;
+//     scanf("%d %d",&day, &month);
+//     if(((day>=1 && day<=29) && (month == 2)) || ((day>=1 && day<=30) && (month == 4 || month == 6 || month == 9 || month == 11)) || ((day >=1 && day <=31) &&(month == 1 ||month == 3 || month == 5 || month == 7 || month ==8 || month == 10 || month == 12))){
+//         printf("correct");
+//     }
+//     else{
+//         printf("error");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int age;
+//     scanf("%d", &age);
+//     if(age <= 6){
+//         printf("дошкольник");
+//     }
+//     if(7<=age && age <=18){
+//         printf("школьник");
+//     }
+//     if(19 <=age && age <=59){
+//         printf("рабочий");
+//     }
+//     if(age >=60){
+//         printf("пенсионер");
+//     }
+//     return 0;
+// }
+
+// for (инициализация счетчика; условие; изменение счетчика)
+//   оператор;
+// for (int i = 0; i <= 100; i = i + 1) // увеличиваем счётчик на единицу
+// // или
+// for (int j = 13; j > 0; j = j / 2) // уменьшаем вдвое
+// // или
+// for (int k = -100; k != 0; k = k - 1) // уменьшаем счётчик на единицу
+// // или
+// for (int m = 255; m >= 0; m = m - 5) // уменьшаем счётчик на 5
+// // или
+// for (int q = 1; q < 1000; q = q * 2) //увеличиваем счётчик в два раза
+
+// #include <stdio.h>
+// int main(){
+//     int a;
+//     scanf("%d", &a);
+//     for (int i = 1; i <= a; i ++){
+//         printf("%d ", i);
+//     }
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int k, m;
+//     int count = 0;
+//     scanf("%d %d", &k, &m);
+//     for (int i = k; i <= m; i++)
+//     {
+//         if (i > 0)
+//         count = count + i;
+//         {
+//             printf("%d ", i);
+//         }
+//     printf("%d", count);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int K, M;
+//     int count = 0;  // Счетчик натуральных чисел
+
+//     // Ввод чисел K и M
+//     scanf("%d %d", &K, &M);
+
+//     // Печать натуральных чисел из диапазона
+//     for (int i = K; i <= M; i++) {
+//         if (i > 0) {  // Проверка на натуральное число
+//             printf("%d ", i);
+//             count++;
+//         }
+//     }
+
+//     if (count == 0) {
+//         printf("0\n");  // Если натуральных чисел нет, сразу выводим 0
+//     } else {
+//         printf("\n%d\n", count);  // Печать количества чисел на новой строке
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int k,m;
+//     scanf("%d %d", &k, &m);
+//     for (int i = m; i  >= k;i--){
+//         printf("%d ", i);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int k, factorial = 1;
+//     scanf("%d", &k);
+//     for(int i = 1; i <= k; i++){
+//         factorial *= i;
+//     }
+//     printf("%d", factorial);
+// return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N); // Ввод N-го числа Фибоначчи
+
+//     long long a = 1, b = 1, next; // Используем long long для больших чисел
+//     if (N == 1 || N == 2) {
+//         printf("1\n"); // Первые два числа Фибоначчи равны 1
+//         return 0;
+//     }
+
+//     for (int i = 3; i <= N; i++) { // Считаем от 3 до N
+//         next = a + b; // Следующее число Фибоначчи
+//         a = b;        // Сдвигаем a и b
+//         b = next;
+//     }
+
+//     printf("%lld\n", b); // Выводим результат
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int A,B;
+//     scanf("%d %d", &A, &B);
+//     for (int i = A; i <= B; i++){
+//         for(int j = 0; j <= i - A; j++){
+//             printf("%5d", i);
+//         }
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int A,B;
+//     scanf("%d %d", &A, &B);
+//     for (int i = A; i <= B; i++){
+//         for(int j = 0; j < i; j++){
+//             printf("%4d", i);
+//         }
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int number;
+//     int counter = 0;
+//     scanf("%d", &number);
+//     for (int i = 1; i <= number; i++)
+//     {
+//         if (number % i == 0)
+//         {
+//             printf("%d ", i);
+//             counter++;
+//         }
+//     }
+//     printf("\n");
+//     printf("%d",counter);
+//     return 0;
+// }
+
